@@ -1,0 +1,1 @@
+netstat -nptl | awk '/:8080/{gsub("/.*", ""); print $7}'
